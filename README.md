@@ -3,7 +3,7 @@ A few samples of Gmsh meshes and geometries for using with Finite Volume solvers
 
 ## Installing GMSH
 To open those samples, you need to have a Gmsh binary.
-* For standalone binaries (Windows included), go to [Gmsh's website](gmsh.info), extract them and run.
+* For standalone binaries (Windows included), go to [Gmsh's website](http://gmsh.info/), extract them and run.
 * For Debian-based Linux distributions, use `apt-get install gmsh`. Notice that this may not give you the latest binaries. If you want those, download from the official website.
 
 ## Running
