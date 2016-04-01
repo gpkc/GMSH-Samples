@@ -1,0 +1,15 @@
+cl_3 = 0.5;
+Point(1) = {0, 0, 0, 0.2};
+Point(2) = {1, 0, 0, 0.2};
+Point(3) = {1, 1, 0, 0.2};
+Point(4) = {0, 1, 0, 0.2};
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(5) = {3, 4};
+Line(6) = {4, 1};
+Line Loop(7) = {5, 6, 1, 2};
+Plane Surface(8) = {7};
+Transfinite Line {5, 1} = 10 Using Progression 1;
+Transfinite Line {2, 6} = 15 Using Progression 1;
+Transfinite Surface {8};
+Recombine Surface {8};

@@ -1,0 +1,15 @@
+cl_3 = 0.5;
+Point(1) = {0, 0, 0, 0.1};
+Point(2) = {1, 0, 0, 0.1};
+Point(3) = {1, 1, 0, 0.1};
+Point(4) = {0, 1, 0, 0.1};
+Line(1) = {1, 2};
+Line(2) = {2, 3};
+Line(5) = {3, 4};
+Line(6) = {4, 1};
+Line Loop(8) = {2, 5, 6, 1};
+Plane Surface(8) = {8};
+Physical Line(101) = {6, 2};
+Physical Line(102) = {1};
+Physical Line(103) = {5};
+Physical Surface(104) = {8};
