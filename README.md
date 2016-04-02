@@ -12,3 +12,10 @@ If you already have Gmsh installed, you can follow those steps to run the softwa
 * From Linux, if you have installed from the repository, you can run `$ gmsh` from the terminal.
 * From Linux, if you have downloaded the binaries, go to the extracted folder and run `$ ./gmsh`.
 To open a given mesh, you can use the contextual menu File -> Open, or if you're using a terminal, you can pass the mesh/geometry file as argument to gmsh (for example, `$ gmsh mesh1.msh`).
+
+## Interface with MATLAB
+This project also includes an interface with MATLAB through the file load_gmsh.m. This file includes a function, called load_gmsh, that takes a filename as argument, and returns a struct object containing mesh-related fields (points, elements, ...).
+Example of usage:
+```
+m = load_gmsh('Geometria1.msh');
+```
